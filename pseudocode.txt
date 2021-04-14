@@ -1,0 +1,33 @@
+Tic Tac Toe Pseudo Code
+
+Create tracking variables
+  whosTurn boolean;
+  totalPlaysCounter;
+  trackingObject to track the board's state;
+
+Create Reset Function
+  reset whosTurn and totalPlaysCounter
+  reset the trackingObject:
+    for in loop... set the id's to null strings
+    and while in the loop reset the on screen HTML to original state.
+
+Use jQuery to manage mouse click events
+
+  Two possible events
+
+    First possible event: Click on the game grid;
+      Use jQuery to extract the clicked button's id selector
+      Check board's state in tracking object to see if grid square has already been played
+        if played..
+          return out of the event and wait for new click event
+        else
+          update tracking object and the HTML with X or O (depending on player state)
+          update totalPlaysCounter and whosTurn variables
+
+        scan the tracking object for the 16 possible winning solutions.
+        if winner... announce it and call the reset function.
+        check for full board... ie 9 plays and not a winner
+        if full... announce "cats game" and call the reset function.
+
+    Second possible event: Click on a "reset" button;
+      call the reset function.
