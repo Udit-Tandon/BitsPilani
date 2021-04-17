@@ -41,7 +41,8 @@ h3 {margin-bottom: 0px;}
 
 #column {
   float: left;
-  width: 30%;
+  width: 33.33%;
+  height: 300px;
 }
 
 /* Clear floats after the columns */
