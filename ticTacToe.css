@@ -19,6 +19,12 @@ button {
   margin-left: auto;
 }
 
+#leftwrap {
+width: 500px;
+margin-right: auto;
+margin-left: initial;
+}
+
 h3 {margin-bottom: 0px;}
 #soundPara {margin-top: 0px;}
 
