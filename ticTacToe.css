@@ -37,3 +37,25 @@ h3 {margin-bottom: 0px;}
   position: relative;
   top: 7px;
 }
+
+.leftpane {
+    width: 25%;
+    height: 100%;
+    float: left;
+    border-collapse: collapse;
+}
+
+.middlepane {
+    width: 50%;
+    height: 100%;
+    float: left;
+    border-collapse: collapse;
+}
+
+.rightpane {
+  width: 25%;
+  height: 100%;
+  position: relative;
+  float: right;
+  border-collapse: collapse;
+}
