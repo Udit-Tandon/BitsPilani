@@ -18,7 +18,7 @@ Craft a readme.md file that explains your app to the world
 
 **Sublime Text:** Text editor for code, markup and prose. https://www.sublimetext.com/
 
-**Web browser:** https://en.wikipedia.org/wiki/Web_browser
+**Visual Studio Code:** Text editor for code, markup and prose. https://code.visualstudio.com/
 
 **HTML:** HyperText Markup Language https://en.wikipedia.org/wiki/HTML https://developer.mozilla.org/en-US/docs/Web/HTML
 
@@ -30,17 +30,12 @@ Craft a readme.md file that explains your app to the world
 
 **CDN:** Content Delivery Network https://en.wikipedia.org/wiki/Content_delivery_network
 
-**Gliffy:** Wireframing tool https://www.gliffy.com/
-
-**Agile Project Tracking Software:** https://en.wikipedia.org/wiki/Agile_software_development https://www.pivotaltracker.com/
-
 **Git:** Distributed version control system https://en.wikipedia.org/wiki/Git_%28software%29 https://git-scm.com/
 
 **Git Hub:** Web-based Git repository hosting service https://en.wikipedia.org/wiki/GitHub https://github.com/
 
-**Static Website Using a Custom Domain (URL):** https://en.wikipedia.org/wiki/Static_web_page
+**GitHub Desktop** : https://desktop.github.com/
 
-**FileZilla:** FTP client for pushing project files to web server https://filezilla-project.org/
 
 **Approach taken to implement the project goals:**
 
