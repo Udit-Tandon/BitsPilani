@@ -1,15 +1,15 @@
 // first wait for the load!
-$(function(){
+$(function () {
 
-// Slap a universal jQuery event handler on the buttons
-// Then drive the whole program from two on-click events!
+  // Slap a universal jQuery event handler on the buttons
+  // Then drive the whole program from two on-click events!
 
-  var xPlayerState      = true;
-  var winner            = false;
-  var catsLives         = 0;
-  var catsGame          = false;
-  var buttons           = null;
-  var upFlashingTimer   = null;
+  var xPlayerState = true;
+  var winner = false;
+  var catsLives = 0;
+  var catsGame = false;
+  var buttons = null;
+  var upFlashingTimer = null;
   var downFlashingTimer = null;
   var upTimer           = null;
   var delayTimer        = null;
@@ -21,6 +21,7 @@ $(function(){
   var player2Color = generateRandomColor();
   $("#X").css("background-color", player1Color);
   $("#O").css("background-color", ""); // vs player2Color
+
   // create an object to store the field state so we can check for a winner;
   // note: there is a one-to-one correspondence to each field button id.
   var fldBtnState = {
@@ -53,6 +54,7 @@ $(function(){
     player1Color = generateRandomColor();
     player2Color = generateRandomColor();
     $("#X").css("background-color", player1Color);
+
     $("#O").css("background-color", "");
     $("button").css("opacity", 1);
 
@@ -67,7 +69,7 @@ $(function(){
     whooshX.currentTime = 0;
   };
 
-  var processWinner = function (winningRow){
+  var processWinner = function (winningRow) {
     // disable the click handler;
     winner = true;
 
@@ -84,18 +86,18 @@ $(function(){
     buttons.css("opacity", 0.6);
 
     // start up cycle 600ms after asap.
-    upTimer = setTimeout(function(){buttons.css("opacity",1.0)}, 600);
+    upTimer = setTimeout(function () { buttons.css("opacity", 1.0) }, 600);
 
     // downFlashingTimer starts 1200ms after asap and repeats every 1200ms.
-    downFlashingTimer = setInterval(function(){
+    downFlashingTimer = setInterval(function () {
       buttons.css("opacity", 0.6);
     }, 1200);
 
     // delay upFlasher by 600ms putting it 180 deg out of phase with downFlasher
-    delayTimer = setTimeout(function(){
+    delayTimer = setTimeout(function () {
 
       // upFlashingTimer starts 1800 ms after asap and repeats every 1200 ms.
-      upFlashingTimer = setInterval(function(){
+      upFlashingTimer = setInterval(function () {
         buttons.css("opacity", 1.0);
       }, 1200);
     }, 600);
@@ -106,33 +108,33 @@ $(function(){
     var player = xPlayerState ? "X" : "O";
 
     // check each row;
-    if((fldBtnState.a1 === player) && (fldBtnState.a2 === player) && (fldBtnState.a3 === player)){
-      processWinner (".r1"); return true;
+    if ((fldBtnState.a1 === player) && (fldBtnState.a2 === player) && (fldBtnState.a3 === player)) {
+      processWinner(".r1"); return true;
     };
-    if((fldBtnState.b1 === player) && (fldBtnState.b2 === player) && (fldBtnState.b3 === player)){
-      processWinner (".r2"); return true;
+    if ((fldBtnState.b1 === player) && (fldBtnState.b2 === player) && (fldBtnState.b3 === player)) {
+      processWinner(".r2"); return true;
     };
-    if((fldBtnState.c1 === player) && (fldBtnState.c2 === player) && (fldBtnState.c3 === player)){
-      processWinner (".r3"); return true;
+    if ((fldBtnState.c1 === player) && (fldBtnState.c2 === player) && (fldBtnState.c3 === player)) {
+      processWinner(".r3"); return true;
     };
 
     // check each column;
-    if((fldBtnState.a1 === player) && (fldBtnState.b1 === player) && (fldBtnState.c1 === player)){
-      processWinner (".c1"); return true;
+    if ((fldBtnState.a1 === player) && (fldBtnState.b1 === player) && (fldBtnState.c1 === player)) {
+      processWinner(".c1"); return true;
     };
-    if((fldBtnState.a2 === player) && (fldBtnState.b2 === player) && (fldBtnState.c2 === player)){
-      processWinner (".c2"); return true;
+    if ((fldBtnState.a2 === player) && (fldBtnState.b2 === player) && (fldBtnState.c2 === player)) {
+      processWinner(".c2"); return true;
     };
-    if((fldBtnState.a3 === player) && (fldBtnState.b3 === player) && (fldBtnState.c3 === player)){
-      processWinner (".c3"); return true;
+    if ((fldBtnState.a3 === player) && (fldBtnState.b3 === player) && (fldBtnState.c3 === player)) {
+      processWinner(".c3"); return true;
     };
 
     // check each diagonal;
-    if((fldBtnState.a1 === player) && (fldBtnState.b2 === player) && (fldBtnState.c3 === player)){
-      processWinner (".d1"); return true;
+    if ((fldBtnState.a1 === player) && (fldBtnState.b2 === player) && (fldBtnState.c3 === player)) {
+      processWinner(".d1"); return true;
     };
-    if((fldBtnState.c1 === player) && (fldBtnState.b2 === player) && (fldBtnState.a3 === player)){
-      processWinner (".d2"); return true;
+    if ((fldBtnState.c1 === player) && (fldBtnState.b2 === player) && (fldBtnState.a3 === player)) {
+      processWinner(".d2"); return true;
     };
 
     // no winner yet.
@@ -149,28 +151,28 @@ $(function(){
 
   // First event handler.
   // When the reset button is clicked on...
-  $("#reset").on("click", function(){resetBoard()});
+  $("#reset").on("click", function () { resetBoard() });
 
   // Second event handler.
   // When a field button is clicked on...
-  $("button.field").on("click", function(){
+  $("button.field").on("click", function () {
 
     // Kill all field click events until reset (New Game) is Selected.
-    if(winner) return;
+    if (winner) return;
 
     var buttonId = $(this).attr('id');
-    var button = $("#"+buttonId);
+    var button = $("#" + buttonId);
 
     // If square already played! Wait for another click.
     if (fldBtnState[buttonId] !== "") return;
 
-    catsLives ++;       // Increment the cat!
+    catsLives++;       // Increment the cat!
     if (xPlayerState) { // it was X's turn.
       // reset the whoosh making sure it isn't still playing then play it.
       whooshX.pause();
       whooshX.currentTime = 0;
       whooshX.play();
-      fldBtnState[buttonId]="X";
+      fldBtnState[buttonId] = "X";
       button.html("X");
       button.css("background-color", player1Color);
       $("#X").css("background-color", "");
@@ -183,12 +185,12 @@ $(function(){
       whooshO.pause();
       whooshO.currentTime = 0;
       whooshO.play();
-      fldBtnState[buttonId]="O";
+      fldBtnState[buttonId] = "O";
       button.html("O");
       button.css("background-color", player2Color);
       $("#X").css("background-color", player1Color);
       $("#O").css("background-color", "");
-      if (checkWinner())return;
+      if (checkWinner()) return;
       xPlayerState = true;
     };
     // no winner and 9 plays? The cat wins.
