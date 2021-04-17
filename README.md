@@ -65,9 +65,4 @@ Continuing development opportunities:
 
 Add interactive user names allowing score keeping.
 Use CSS to style background and button design... etc.
-Written with StackEdit.
->>>>>>> Stashed changes
-=======
 
-This tic tac toe program is a web based program and can be used for basic understanding of HTML, CSS and java script
->>>>>>> main
