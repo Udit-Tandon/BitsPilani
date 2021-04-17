@@ -19,6 +19,11 @@ button {
   margin-left: auto;
 }
 
+#imagewrapper {
+  margin-right: auto;
+  margin-left: auto;
+}
+
 h3 {margin-bottom: 0px;}
 #soundPara {margin-top: 0px;}
 
