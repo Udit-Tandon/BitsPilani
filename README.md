@@ -1,4 +1,7 @@
 # Open Source Software Assignment 4 - Group 50
+
+![](ticTac.gif)
+
 We have chosen TIC-TAC-TOE for the open source software project assignment 4.
 **Overview**: We are contributing and collaborating for this OSS project to build an interactive user game designed to be played in a web browser.
 
