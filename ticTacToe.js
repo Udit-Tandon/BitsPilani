@@ -11,14 +11,16 @@ $(function () {
   var buttons = null;
   var upFlashingTimer = null;
   var downFlashingTimer = null;
-  var upTimer           = null;
-  var delayTimer        = null;
-  var whooshO           = $("audio")[0];
-  var whooshX           = $("audio")[1];
-  var applause          = $("audio")[2];
-  var meow              = $("audio")[3];
+  var upTimer = null;
+  var delayTimer = null;
+  var whooshO = $("audio")[0];
+  var whooshX = $("audio")[1];
+  var applause = $("audio")[2];
+  var meow = $("audio")[3];
   var player1Color = generateRandomColor();
   var player2Color = generateRandomColor();
+  $("#player1_img").show()
+  $("#player2_img").hide()
   $("#X").css("background-color", player1Color);
   $("#O").css("background-color", ""); // vs player2Color
 
@@ -45,14 +47,16 @@ $(function () {
 
     // Reset everything else.
     $(".field").html("click me");
-    $(".field").css("background-color","");
-    catsLives     = 0;
-    xPlayerState  = true;
-    winner        = false;
-    catsGame      = false;
-    buttons       = null;
+    $(".field").css("background-color", "");
+    catsLives = 0;
+    xPlayerState = true;
+    winner = false;
+    catsGame = false;
+    buttons = null;
     player1Color = generateRandomColor();
     player2Color = generateRandomColor();
+    $("#player1_img").show()
+    $("#player2_img").hide()
     $("#X").css("background-color", player1Color);
 
     $("#O").css("background-color", "");
@@ -141,13 +145,13 @@ $(function () {
     return false;
   }
 
-  function generateRandomColor(){
-    var r = Math.floor(Math.random() * 256);	
-    var g = Math.floor(Math.random() * 256);	
+  function generateRandomColor() {
+    var r = Math.floor(Math.random() * 256);
+    var g = Math.floor(Math.random() * 256);
     var b = Math.floor(Math.random() * 256);
-    return "rgb("+r+", "+g+", "+b+")";	
+    return "rgb(" + r + ", " + g + ", " + b + ")";
   }
-  
+
 
   // First event handler.
   // When the reset button is clicked on...
@@ -177,7 +181,9 @@ $(function () {
       button.css("background-color", player1Color);
       $("#X").css("background-color", "");
       $("#O").css("background-color", player2Color);
-      if (checkWinner())return;
+      $("#player1_img").hide()
+      $("#player2_img").show()
+      if (checkWinner()) return;
       xPlayerState = false;
     }
     else {              // it was O's turn.
@@ -190,6 +196,8 @@ $(function () {
       button.css("background-color", player2Color);
       $("#X").css("background-color", player1Color);
       $("#O").css("background-color", "");
+      $("#player1_img").show()
+      $("#player2_img").hide()
       if (checkWinner()) return;
       xPlayerState = true;
     };
