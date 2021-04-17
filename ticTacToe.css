@@ -4,13 +4,19 @@ button {
   margin: 3px;
   border-width: 3px;
   border-color: black;
+  border-radius: 15px;
   transition: all .4s ease;
+}
+
+button:focus {
+  outline: none;
 }
 
 #X, #O, #reset {
   height: 80px;
   width:  80px;
   margin-left: 20px;
+  border-radius: 18px;
 }
 
 #wrapper {
