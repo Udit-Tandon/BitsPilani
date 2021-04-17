@@ -6,7 +6,7 @@ We are contributing and collaborating for this OSS project to build an interacti
 
 This tic tac toe program is a web-based program and can be used for a basic understanding of HTML, CSS and javascript.
 
-### Contrubutors Name:
+### Contrubutors Name
 
 Udit Tandon
 
@@ -15,7 +15,7 @@ Vijay Simha Reddy
 Vaidhyanathan A
 
 
-### Contibutors Repository Links:
+### Contibutors Repository Links
 
 **OWNER REPOSITORY:**  https://github.com/Udit-Tandon/BitsPilani 
 
@@ -24,6 +24,11 @@ Vaidhyanathan A
 VIJAY -  https://github.com/vijay0405/BitsPilani
 
 VAIDYANATHAN - https://github.com/vaidhyanathan93/BitsPilani 
+
+
+### License 
+
+[Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0.html)
 
 
 ### Big Goals
