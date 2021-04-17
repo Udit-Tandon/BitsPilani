@@ -44,7 +44,7 @@ Craft a readme.md file that explains your app to the world
 
 **Approach taken to implement the project goals:**
 
-The focus was first and foremost on **MVP (Minimal Viable Product.) ** Therefore, no player selection or tracking. The first play is always "X".
+The focus was first and foremost on MVP (Minimal Viable Product). Therefore, no player selection or tracking. The first play is always "X".
 Determine the driving technology. The challenge is the game logic. Therefore, JavaScript is obviously the driving technology. Intricate display styling was not a requirement of the project. Game board display, being a simple 3x3 grid, is not considered a driving technology.
 Study the game logic to determine a what variables were required to track current user, grid cell selection, game progress, and determine a winner.
 Create minimal display using HTML and CSS. Attach to the HTML elements unique id selectors making them accessible to the JavaScript.
