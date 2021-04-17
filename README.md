@@ -9,15 +9,20 @@ This tic tac toe program is a web-based program and can be used for a basic unde
 ### Contrubutors Name:
 
 Udit Tandon
+
 Vijay Simha Reddy
+
 Vaidhyanathan A
 
 
 ### Contibutors Repository Links:
 
-OWNER REPOSITORY : https://github.com/Udit-Tandon/BitsPilani 
-FORKED REPOSITORIES :
-VIJAY -  https://github.com/vijay0405/BitsPilani 
+**OWNER REPOSITORY:**  https://github.com/Udit-Tandon/BitsPilani 
+
+**FORKED REPOSITORIES:**
+
+VIJAY -  https://github.com/vijay0405/BitsPilani
+
 VAIDYANATHAN - https://github.com/vaidhyanathan93/BitsPilani 
 
 
