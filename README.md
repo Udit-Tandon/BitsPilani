@@ -2,7 +2,7 @@
 
 ![](ticTac.gif)
 
-We have chosen TIC-TAC-TOE for the open source software project assignment 4.
+We have chosen [TIC-TAC-TOE](https://udit-tandon.github.io/BitsPilani/) for the open source software project assignment 4.
 
 ## Overview
 We are contributing and collaborating for this OSS project to build an interactive user game designed to be played in a web browser.
@@ -28,6 +28,7 @@ VIJAY -  https://github.com/vijay0405/BitsPilani
 
 VAIDYANATHAN - https://github.com/vaidhyanathan93/BitsPilani 
 
+[GITPAGE LINK](https://udit-tandon.github.io/BitsPilani/)
 
 ### License 
 
