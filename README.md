@@ -1,11 +1,11 @@
 # BitsPilani Open Source Software Assignment 4
-TIC-TAC-TOE For the open source software project assignment 4.
-Overview: We are contributing and collaborating for this OSS project to build an interactive user game designed to be played in a web browser.
+We have chosen TIC-TAC-TOE for the open source software project assignment 4.
+**Overview**: We are contributing and collaborating for this OSS project to build an interactive user game designed to be played in a web browser.
 
 This tic tac toe program is a web based program and can be used for basic understanding of HTML, CSS and java script
 
 
-Big Goals
+**Big Goals**
 
 Build a web application from scratch, without a starter codebase
 Use your programming skills to map out the game logic for a simple game like Tic Tac Toe
