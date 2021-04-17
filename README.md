@@ -1,11 +1,13 @@
 # Open Source Software Assignment 4 - Group 50
 We have chosen TIC-TAC-TOE for the open source software project assignment 4.
-**Overview**: We are contributing and collaborating for this OSS project to build an interactive user game designed to be played in a web browser.
 
-This tic tac toe program is a web based program and can be used for basic understanding of HTML, CSS and java script
+## Overview
+We are contributing and collaborating for this OSS project to build an interactive user game designed to be played in a web browser.
+
+This tic tac toe program is a web-based program and can be used for a basic understanding of HTML, CSS and javascript.
 
 
-**Big Goals**
+### Big Goals
 
 Build a web application from scratch, without a starter codebase
 Use your programming skills to map out the game logic for a simple game like Tic Tac Toe
@@ -14,9 +16,9 @@ Build an application to a spec that someone else gives you
 Build a dynamic game that allows two players to compete
 Craft a readme.md file that explains your app to the world
 
-**Explanations of the technologies used:**
+### Explanations of the technologies used:
 
-**Sublime Text:** Text editor for code, markup and prose. https://www.sublimetext.com/
+**MarkDown-IT**: Text editor for code, markup and prose. https://markdown-it.github.io
 
 **Web browser:** https://en.wikipedia.org/wiki/Web_browser
 
@@ -42,9 +44,10 @@ Craft a readme.md file that explains your app to the world
 
 **FileZilla:** FTP client for pushing project files to web server https://filezilla-project.org/
 
-**Approach taken to implement the project goals:**
 
-The focus was first and foremost on MVP (Minimal Viable Product). Therefore, no player selection or tracking. The first play is always "X".
+### Approach taken to implement the project goals:
+
+The focus was first and foremost on **MVP (Minimal Viable Product)**. Therefore, no player selection or tracking. The first play is always "X".
 Determine the driving technology. The challenge is the game logic. Therefore, JavaScript is obviously the driving technology. Intricate display styling was not a requirement of the project. Game board display, being a simple 3x3 grid, is not considered a driving technology.
 Study the game logic to determine a what variables were required to track current user, grid cell selection, game progress, and determine a winner.
 Create minimal display using HTML and CSS. Attach to the HTML elements unique id selectors making them accessible to the JavaScript.
@@ -53,11 +56,11 @@ Write the javaScrip code, testing iteratively;
 Write this README.md and push up to Git Hub.
 Push up to host server.
 
-**Unsolved problems:**
+### Unsolved problems:
 
 None. MVP achieved.
 
-**Continuing development opportunities:**
+### Continuing development opportunities:
 
 Add interactive user names allowing score keeping.
 Use CSS to style background and button design... etc.
