@@ -9,7 +9,7 @@ We are contributing and collaborating for this OSS project to build an interacti
 
 This tic tac toe program is a web-based program and can be used for a basic understanding of HTML, CSS and javascript.
 
-### Contrubutors Name
+### Contributors Name
 
 Udit Tandon
 
