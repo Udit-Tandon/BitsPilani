@@ -1,4 +1,4 @@
-# BitsPilani
+# BitsPilani Open Source Software Assignment 4
 TIC-TAC-TOE For the open source software project assignment 4.
 Overview: We are contributing and collaborating for this OSS project to build an interactive user game designed to be played in a web browser.
 
