@@ -85,5 +85,6 @@ None. MVP achieved.
 ### Continuing development opportunities:
 
 Add interactive user names allowing score keeping.
+
 Use CSS to style background and button design... etc.
 
