@@ -5,7 +5,6 @@ Overview: We are contributing and collaborating for this OSS project to build an
 This tic tac toe program is a web based program and can be used for basic understanding of HTML, CSS and java script
 
 
-
 Big Goals
 
 Build a web application from scratch, without a starter codebase
