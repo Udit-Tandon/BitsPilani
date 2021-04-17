@@ -212,7 +212,7 @@ $(function () {
 var saveGameInLocalStorage = function () {
   const game = {
     name: getWinner,
-    score: getScore,
+    score: whooshO.getScore,
   }
 
   window.localStorage.setItem('user', JSON.stringify(game));
