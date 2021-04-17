@@ -11,14 +11,16 @@ $(function () {
   var buttons = null;
   var upFlashingTimer = null;
   var downFlashingTimer = null;
-  var upTimer = null;
-  var delayTimer = null;
-  var whooshO = $("audio")[0];
-  var whooshX = $("audio")[1];
-  var applause = $("audio")[2];
-  var meow = $("audio")[3];
-  $("#X").css("background-color", "blue");
-  $("#O").css("background-color", ""); // vs firebrick
+  var upTimer           = null;
+  var delayTimer        = null;
+  var whooshO           = $("audio")[0];
+  var whooshX           = $("audio")[1];
+  var applause          = $("audio")[2];
+  var meow              = $("audio")[3];
+  var player1Color = generateRandomColor();
+  var player2Color = generateRandomColor();
+  $("#X").css("background-color", player1Color);
+  $("#O").css("background-color", ""); // vs player2Color
 
   // create an object to store the field state so we can check for a winner;
   // note: there is a one-to-one correspondence to each field button id.
@@ -43,13 +45,16 @@ $(function () {
 
     // Reset everything else.
     $(".field").html("click me");
-    $(".field").css("background-color", "");
-    catsLives = 0;
-    xPlayerState = true;
-    winner = false;
-    catsGame = false;
-    buttons = null;
-    $("#X").css("background-color", "blue");
+    $(".field").css("background-color","");
+    catsLives     = 0;
+    xPlayerState  = true;
+    winner        = false;
+    catsGame      = false;
+    buttons       = null;
+    player1Color = generateRandomColor();
+    player2Color = generateRandomColor();
+    $("#X").css("background-color", player1Color);
+
     $("#O").css("background-color", "");
     $("button").css("opacity", 1);
 
@@ -136,6 +141,14 @@ $(function () {
     return false;
   }
 
+  function generateRandomColor(){
+    var r = Math.floor(Math.random() * 256);	
+    var g = Math.floor(Math.random() * 256);	
+    var b = Math.floor(Math.random() * 256);
+    return "rgb("+r+", "+g+", "+b+")";	
+  }
+  
+
   // First event handler.
   // When the reset button is clicked on...
   $("#reset").on("click", function () { resetBoard() });
@@ -161,10 +174,10 @@ $(function () {
       whooshX.play();
       fldBtnState[buttonId] = "X";
       button.html("X");
-      button.css("background-color", "blue");
+      button.css("background-color", player1Color);
       $("#X").css("background-color", "");
-      $("#O").css("background-color", "firebrick");
-      if (checkWinner()) return;
+      $("#O").css("background-color", player2Color);
+      if (checkWinner())return;
       xPlayerState = false;
     }
     else {              // it was O's turn.
@@ -174,8 +187,8 @@ $(function () {
       whooshO.play();
       fldBtnState[buttonId] = "O";
       button.html("O");
-      button.css("background-color", "firebrick");
-      $("#X").css("background-color", "blue");
+      button.css("background-color", player2Color);
+      $("#X").css("background-color", player1Color);
       $("#O").css("background-color", "");
       if (checkWinner()) return;
       xPlayerState = true;
